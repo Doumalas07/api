@@ -1,1 +1,1 @@
-PÔLE Recherche et développement
+PÔLE Recherche & Développement
