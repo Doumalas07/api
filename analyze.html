@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse des Données JSON</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+</head>
+<body>
+
+<h1>Analyse des Données JSON</h1>
+
+<!-- Champ pour charger un fichier JSON -->
+<h2>Ouvrir un fichier JSON pour analyse</h2>
+<input type="file" id="jsonFileInput" accept=".json" />
+<button id="loadButton">Charger et Analyser</button>
+
+<!-- Table principale avec les capteurs -->
+<h2>Table des Dispositifs et Capteurs</h2>
+<table id="main-table" class="data-table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom du dispositif</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Distance totale (Km)</th>
+            <th>Satellite</th>
+            <th>Batterie</th>
+            <th>GSM</th>
+            <th>Contact</th>
+            <th>Odomètre</th>
+            <th>Température</th>
+            <th>Moteur</th>
+            <th>Charge</th>
+            <th>ID Conducteur</th>
+            <th>Heure moteur</th>
+            <th>Réservoir</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- Table de Traccar -->
+<h2>Table Traccar</h2>
+<table id="traccar-table" class="data-table">
+    <thead>
+        <tr>
+            <th>ID Dispositif</th>
+            <th>Nom Traccar</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>uniqueId</th>
+            <th>time</th>
+            <th>device_time</th>
+            <th>protocol</th>
+            <th>latest_positions</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- Bouton pour exporter en Excel -->
+<button id="exportButton">Télécharger les données en Excel</button>
+
+<script src="analyze.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Récupérer et Télécharger des Données JSON</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Utilisation d'un fichier CSS externe -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Récupérer et Télécharger des Données JSON</h1>
+
+    <!-- Étape 1: Bouton pour appeler l'API -->
+    <button onclick="fetchJsonData()">Appel API et Affichage des Données</button>
+
+    <!-- Étape 2: Affichage des données JSON dans un textarea -->
+    <h2>Données JSON :</h2>
+    <textarea id="json-display" rows="20" readonly></textarea>
+
+    <!-- Étape 3: Télécharger le fichier JSON -->
+    <h2>Télécharger le fichier JSON</h2>
+    <button onclick="downloadJson()">Télécharger les données JSON</button>
+
+    <!-- Lien vers la seconde page pour charger et analyser le fichier JSON -->
+    <h2>Passer à l'analyse des données</h2>
+    <a href="analyze.html">Aller à l'analyse du fichier JSON</a>
+</div>
+
+<script src="app.js"></script> <!-- Utilisation d'un fichier JS externe -->
+
+</body>
+</html>
